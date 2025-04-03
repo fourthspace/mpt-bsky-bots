@@ -1,7 +1,7 @@
 {
-  "name": "mpt-bsky-bot",
+  "name": "mpt-bot",
   "version": "1.0.0",
-  "type": "module",
+  "main": "bot.js",
   "dependencies": {
     "@atproto/api": "^0.2.0"
   },
