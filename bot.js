@@ -1,4 +1,4 @@
-import { BskyAgent } from '@atproto/api';
+const { BskyAgent } = require('@atproto/api');
 
 const agent = new BskyAgent({
   service: 'https://bsky.social',
@@ -11,11 +11,10 @@ const runBot = async () => {
   await agent.login({ identifier: handle, password });
 
   await agent.post({
-    text: "🎾 Just dropped into the feed. Let's make some noise. #MatchPointTennis",
+    text: "🎾 Megan's here — let's get to work. #MatchPointTennis",
   });
 
-  console.log('✅ Megan posted!');
+  console.log('✅ Post sent!');
 };
 
 runBot();
-
